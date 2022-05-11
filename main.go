@@ -41,15 +41,24 @@ func main() {
 		// ask user for their data
 		fmt.Println("Please Enter your first name: ")
 		fmt.Scan(&firstName)
+		//checking that first name more than or equal to 3 characters
+		for len(firstName) < 3 {
+			fmt.Println("Please Enter a Valid first name with more than 3 characters")
+			fmt.Scan(&firstName)
+		}
 
 		fmt.Println("Please Enter your last name: ")
 		fmt.Scan(&lastName)
+		//checking that last name more than or equal to 3 characters
+		for len(lastName) < 3 {
+			fmt.Println("Please Enter a Valid last name with more than 3 characters")
+			fmt.Scan(&lastName)
+		}
 
 		fmt.Println("Please Enter your email address: ")
 		fmt.Scan(&email)
 
 		fmt.Println("Please Enter number of tickets: ")
-
 		fmt.Scan(&userTickets)
 		//only takes input while the desired count of tickets is smaller than remainingTickets
 		for remainingTickets < userTickets {
