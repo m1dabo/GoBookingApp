@@ -57,6 +57,12 @@ func main() {
 
 		fmt.Println("Please Enter your email address: ")
 		fmt.Scan(&email)
+		// weak validation for email address, but it is just an example
+		//strings.Contains built-in function in GO
+		for !(strings.Contains(email, "@")) {
+			fmt.Println("Please Enter valid email address: ")
+			fmt.Scan(&email)
+		}
 
 		fmt.Println("Please Enter number of tickets: ")
 		fmt.Scan(&userTickets)
