@@ -111,4 +111,21 @@ func main() {
 			break
 		}
 	}
+
+	city := "London"
+
+	switch city {
+	case "New York":
+		fmt.Printf("Good Big City '%v'", city)
+	case "SingaPore":
+		fmt.Printf("Good Worthy City '%v'", city)
+	case "London":
+		fmt.Printf("Good Legacy City '%v'", city)
+	case "Berlin":
+		fmt.Printf("Good sexy City '%v'", city)
+	case "Mexico City":
+		fmt.Printf("Good Mexican City '%v'", city)
+	case "Hong Kong":
+		fmt.Printf("Good Asian City '%v'", city)
+	}
 }
