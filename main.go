@@ -119,7 +119,7 @@ func main() {
 		fmt.Printf("Good Big City '%v'", city)
 	case "SingaPore":
 		fmt.Printf("Good Worthy City '%v'", city)
-	case "London":
+	case "Cairo":
 		fmt.Printf("Good Legacy City '%v'", city)
 	case "Berlin":
 		fmt.Printf("Good sexy City '%v'", city)
@@ -127,5 +127,7 @@ func main() {
 		fmt.Printf("Good Mexican City '%v'", city)
 	case "Hong Kong":
 		fmt.Printf("Good Asian City '%v'", city)
+	default:
+		fmt.Printf("Good England City '%v'", city)
 	}
 }
