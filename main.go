@@ -31,7 +31,7 @@ func main() {
 	fmt.Println("Get your tickets here to attend")
 
 	// loop to keep asking after one booking is done.
-	for remainingTickets > 0 {
+	for remainingTickets > 0 && len(bookings_slice) < 50 {
 		var firstName string
 		var lastName string
 		var email string
@@ -96,5 +96,4 @@ func main() {
 			break
 		}
 	}
-
 }
